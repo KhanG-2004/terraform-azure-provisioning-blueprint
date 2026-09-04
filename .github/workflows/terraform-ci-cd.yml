@@ -22,5 +22,8 @@ jobs:
       - name: Verify Formatting Style
         run: terraform fmt -check
 
-      - name: Validate Syntax
+      - name: Initialize Without Backend
+        run: terraform init -backend=false
+
+      - name: Validate Syntax & Schemas
         run: terraform validate -no-color
