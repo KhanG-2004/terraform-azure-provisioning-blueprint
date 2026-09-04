@@ -44,13 +44,3 @@ terraform plan -out=production.tfplan
 terraform apply production.tfplan
 ```
 
-🔐 GitHub Actions Secrets Setup
-To run automated pipelines via GitHub Actions, add these repository secrets (Settings > Secrets and variables > Actions):
-
-AZURE_CLIENT_ID
-
-AZURE_CLIENT_SECRET
-
-AZURE_SUBSCRIPTION_ID
-
-AZURE_TENANT_ID
